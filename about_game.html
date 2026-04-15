@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about_game.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Helvetica, Arial, sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            display: flex;
+            font-size: 14px;
+            width: 100vw;
+            padding: 0 1.5rem;
+            background-color: rgba(34, 36, 38, 0.75);
+            box-shadow: rgba(24, 26, 27, 0.35) 0px 3px 7px 0px;
+            z-index: 99;
+        }
+
+        .header_logo img {
+            width: 146px;
+        }
+
+        .header_audio {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem 0 3rem;
+        }
+
+        .header_audiobtn {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header_audio img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .header_navbar {
+            display: flex;
+            margin: 0 2rem;
+        }
+
+        .header_navlink {
+            list-style: none;
+            padding: 1.5rem;
+            cursor: pointer;
+        }
+
+        .header_navlink:hover,
+        .header_navlink:hover a {
+            color: white;
+            text-shadow: 0 0 20px cyan, 0 0 20px cyan;
+        }
+
+        .dropdown li:hover {
+            background-color: #383636;
+        }
+
+        .dropdown li {
+            list-style: none;
+            padding: 1.5rem 2rem 1rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #c8c3bc;
+        }
+
+        .dropdown {
+            display: none;
+            color: #c8c3bc;
+            text-shadow: initial;
+            position: absolute;
+            background-color: #272626;
+            top: 66px;
+            box-shadow: rgba(24, 26, 27, 0.35) 0px 3px 7px 0px;
+        }
+
+        .header_explore:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown:hover {
+            display: block;
+        }
+
+        .footer {
+            margin-top: 448px;
+            background-color: #111;
+            color: #c8c3bc;
+        }
+
+        .footer h2 {
+            color: white;
+            line-height: 64px;
+        }
+
+        .footer ul {
+            padding-top: 16px;
+        }
+
+        .footer li {
+            list-style: none;
+            font-size: 14px;
+            padding: 6px;
+        }
+
+        .footer_content {
+            display: flex;
+            padding: 128px;
+            padding-top: 56px;
+            background-color: black;
+            border: 1px solid #323232;
+        }
+
+        .footer_part {
+            flex: 1;
+        }
+
+        .footer_logo {
+            width: 128px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_audio">
+            <button class="header_audiobtn"><img src="./assets/audio2.png" alt=""></button>
+        </div>
+        <div class="header_logo">
+            <img src="./assets/Genshin-Impact-Logo-PNG-Photo.png" alt="">
+        </div>
+        <div class="header_navbar">
+            <a href="" class="header_navlink">HOME</a>
+            <a href="" class="header_navlink">NEWS</a>
+            <a href="" class="header_navlink">CHARACTERS</a>
+            <div class="header_navlink header_explore">
+                <a href="">EXPLORE</a>
+                <ul class="dropdown">
+                    <li>ABOUT GAME</li>
+                    <li>TEYVAT</li>
+                    <li>ITINERARY</li>
+                    <li>MANGA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page_content">
+        <div class="top" style="background-color: white;">
+            <!-- <img src="./assets/topBackground.615c72a.png" alt="" class="top_background"> -->
+            <img src="./assets/b433e97332833767fb0b7886c5f181ad_2163930835251506186.png" alt="" class="top_overlay">
+        </div>
+        <div class="videos">
+            <div class="videos_title">
+                Game Videos
+            </div>
+            <div class="videos_carousel">
+                <div class="carousel_wrapper">
+                    <div class="videos_card videos_card_active"><img src="./assets/card1.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/card2.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/card3.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/card4.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/card5.jpg" alt=""></div>
+                </div>
+                <div class="videos_carousel_nav">
+                    <span class="videos_carousel_btn videos_carousel_btn_active"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="features_title">
+                Game Features
+            </div>
+            <div class="features_items">
+                <div class="features_item"
+                    style="background-image: url(./assets/features1.png); background-position: right center;">
+                    <div class="item_content" style="left: -14px">
+                        <div class="item_title">An Epic Fantasy Adventure</div>
+                        <div class="item_desc">Experience an immersive single-player campaign. As a traveler from
+                            another <br> world, you will embark on a journey to reunite with your long-lost sibling and
+                            unravel the mysteries of Teyvat, and yourself.</div>
+                    </div>
+                </div>
+                <div class="features_item"
+                    style="background-image: url(./assets/features2.png); background-position: left center;">
+                    <div class="item_content" style="right: -14px">
+                        <div class="item_title">Your World to Discover</div>
+                        <div class="item_desc">Fly across the open world, swim through crystal-clear waters, and climb
+                            towering mountains. Stray off the beaten path to discover all the hidden secrets of a world
+                            <br> full of wonder and mystery. <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_item"
+                    style="background-image: url(./assets/features3.png); background-position: right center;">
+                    <div class="item_content" style="left: -14px">
+                        <div class="item_title">Travel Alone or Battle Together</div>
+                        <div class="item_desc">Charge head-on into battles solo, or invite friends to join the fight
+                            against powerful monsters with cross-play for PC, iOS, Android, PS, and Xbox. <br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_item"
+                    style="background-image: url(./assets/features4.png); background-position: left center;">
+                    <div class="item_content" style="right: -14px">
+                        <div class="item_title">Master the Seven Elements</div>
+                        <div class="item_desc">Not just another mindless hack and slash. Manipulating the various
+                            elements is the <br> key to defeating powerful enemies and solving challenging puzzles.
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_item"
+                    style="background-image: url(./assets/features5.png); background-position: right center;">
+                    <div class="item_content" style="left: -14px">
+                        <div class="item_title">Build Your Dream Team</div>
+                        <div class="item_desc">Choose who fights by your side. Build your party from over 20+ characters
+                            (with more to come) — each with unique abilities, personalities, and combat styles.
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="videos_title">
+                Game Screenshots
+            </div>
+            <div class="videos_carousel">
+                <div class="carousel_wrapper">
+                    <div class="videos_card videos_card_active"><img src="./assets/scrshit1.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit2.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit3.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit4.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit5.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit6.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit7.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit8.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit9.jpg" alt=""></div>
+                    <div class="videos_card"><img src="./assets/scrshit0.jpg" alt=""></div>
+                </div>
+                <div class="videos_carousel_nav">
+                    <span class="videos_carousel_btn videos_carousel_btn_active"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                    <span class="videos_carousel_btn"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bg" style="top: 732px;"></div>
+    </div>
+    <div class="footer">
+        <div style="text-align: center;">
+            <img src="./assets/Genshin-Impact-Logo-PNG-Photo.png" alt="" class="footer_logo">
+        </div>
+        <div class="footer_content">
+            <div class="footer_part">
+                <h2>CREDIT</h2>
+                <ul>
+                    <li>Dương Thái Quốc Bảo</li>
+                    <li>Cao Hoàng Long</li>
+                    <li>Trần Ngọc Hoàng Long</li>
+                    <li>Phạm Quang Minh</li>
+                    <li>Nguyễn Hoài Bảo Nghi</li>
+                </ul>
+            </div>
+            <div class="footer_part">
+                <h2>SITE LINKS</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Characters</li>
+                    <li>About Game</li>
+                    <li>Teyvat</li>
+                    <li>Itinerary</li>
+                    <li>Manga</li>
+                </ul>
+            </div>
+            <div class="footer_part">
+                <h2>FOLLOW US</h2>
+                <ul>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                    <li>Discord</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./about_game.js"></script>
+</body>
+
+</html>
